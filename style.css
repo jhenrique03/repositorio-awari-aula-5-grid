@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+}
+.grid-pai {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 8px;
+  height: 100%;
+}
+
+.cabecalho {
+  background-color: red;
+  padding: 8px;
+  grid-column: span 5;
+  align-self: center;
+}
+
+.menu {
+  background-color: aqua;
+  grid-column: 1;
+  padding: 8px;
+}
+
+.conteudo {
+  background-color: blueviolet;
+  padding: 8px;
+  grid-column: span 4;
+}
+
+.rodape {
+  background-color: greenyellow;
+  padding: 8px;
+  grid-column: span 5;
+  text-align: center;
+  align-self: center;
+}
